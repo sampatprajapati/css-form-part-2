@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Form</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <style>
+            body {
+                margin: 0px;
+                background: #f3e1e3;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .f {
+                width: 50%;
+                height: 550px;
+                background: red;
+                margin: 100px auto;
+                border-radius: 15px;
+                overflow: hidden;
+                box-shadow: 0px 10px 10px 5px rgba(0, 0, 0, 0.3);
+                clear: both;
+                text-align: center;
+            }
+            .c {
+                width: 50%;
+                float: left;
+                height: 100%;
+                background: #ffffff;
+            }
+            .r {
+                width: 50%;
+                background-image: -webkit-linear-gradient(
+                    left,
+                    #ff434b,
+                    #ff3f69
+                );
+                color: white;
+            }
+            .text {
+                margin: 190px 70px;
+                font-size: large;
+                text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+            }
+            .social_icons {
+                width: 50px;
+                height: 50px;
+                line-height: 50px;
+                color: #303030;
+                display: inline-block;
+                border-radius: 50px;
+                border: 1px solid #303030;
+                font-size: 2em;
+            }
+            input[type="text"],
+            input[type="password"] {
+                width: 97%;
+                border: none;
+                padding: 10px 0px 10px 10px;
+                background: rgb(207, 202, 202);
+                margin: 5px 0px;
+            }
+            input[type="submit"] {
+                background: #ff434b;
+                color: #ffffff;
+                border: none;
+                font-weight: bold;
+                padding: 10px 30px;
+                border-radius: 20px;
+                cursor: pointer;
+            }
+            .forget {
+                color: #303030;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="f">
+            <div class="l c">
+                <div style="margin: 80px 60px">
+                    <h1>Login</h1>
+                    <a href="#" class="social_icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social_icons">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <p>or use your account</p>
+                    <input type="text" placeholder="Email" name="email" />
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        name="password"
+                    />
+                    <div style="margin: 25px 0px">
+                        <a href="#" class="forget">Forget your password ?</a>
+                    </div>
+
+                    <div>
+                        <input type="submit" value="LOG IN" name="submit" />
+                    </div>
+                </div>
+            </div>
+            <div class="r c">
+                <div class="text">
+                    <h1>HTML CSS Login Form</h1>
+                    <h3>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry.
+                    </h3>
+                </div>
+            </div>
+        </form>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+            integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </body>
+</html>
